@@ -87,7 +87,7 @@ public void sierpinski(float x, float y, float z, float len)
 		sierpinski(x+(len/2),y,z,len/2);
 		sierpinski(x,y,z-(len/2),len/2);
 		sierpinski(x+(len/2),y,z-(len/2),len/2);
-		sierpinski(x+(len/4),y-(len/((float)Math.sqrt(2)*2)),z-(len/4),len/2);
+		sierpinski(x+(len/4),y-(len/(float(Math.sqrt(2))*2)),z-(len/4),len/2);
 	}
 	else
 	{
@@ -95,10 +95,10 @@ public void sierpinski(float x, float y, float z, float len)
 		line(x,y,z,x,y,z-len);
 		line(x,y,z-len,x+len,y,z-len);
 		line(x+len,y,z-len,x+len,y,z);
-		line(x,y,z,x+len/2,y-(len/(float)Math.sqrt(2)),z-(len/2));
-		line(x+len,y,z,x+len/2,y-(len/(float)Math.sqrt(2)),z-(len/2));
-		line(x,y,z-len,x+len/2,y-(len/(float)Math.sqrt(2)),z-(len/2));
-		line(x+len,y,z-len,x+len/2,y-(len/(float)Math.sqrt(2)),z-(len/2));
+		line(x,y,z,x+len/2,y-(len/float(Math.sqrt(2))),z-(len/2));
+		line(x+len,y,z,x+len/2,y-(len/float(Math.sqrt(2))),z-(len/2));
+		line(x,y,z-len,x+len/2,y-(len/float(Math.sqrt(2))),z-(len/2));
+		line(x+len,y,z-len,x+len/2,y-(len/float(Math.sqrt(2))),z-(len/2));
 	}
 	// popMatrix();
 }
