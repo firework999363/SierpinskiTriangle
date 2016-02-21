@@ -13,7 +13,7 @@ public void setup()
 public void draw()
 {
 	smooth();
-	colorMode(HSB, 210);
+	colorMode(HSB, 209);
 	background(-x2+210,100,150);
 	slider();
 	if (x2 > 250)
