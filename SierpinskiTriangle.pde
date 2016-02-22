@@ -14,8 +14,6 @@ public void draw()
 {
 	smooth();
 	colorMode(HSB, 210);
-	background(-x2+210,100,150);
-	slider();
 	if (x2 > 209)
 	{
 		x2 = 209;
@@ -28,6 +26,8 @@ public void draw()
 	{
 		x2 = x2;
 	}
+	background(-x2+210,100,150);
+	slider();
 	q = (((float)(-599)/210)*x2 + ((float)(14996)/21));
 	if(q < 30)
 	{
