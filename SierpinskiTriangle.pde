@@ -16,9 +16,9 @@ public void draw()
 	colorMode(HSB, 210);
 	background(-x2+210,100,150);
 	slider();
-	if (x2 > 250)
+	if (x2 > 209)
 	{
-		x2 = 250;
+		x2 = 209;
 	}
 	else if (x2 < 40)
 	{
