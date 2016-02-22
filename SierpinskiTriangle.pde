@@ -26,7 +26,7 @@ public void draw()
 	{
 		x2 = x2;
 	}
-	background(-x2+210,100,150);
+	background(-x2+250,100,150);
 	slider();
 	q = (((float)(-599)/210)*x2 + ((float)(14996)/21));
 	if(q < 30)
