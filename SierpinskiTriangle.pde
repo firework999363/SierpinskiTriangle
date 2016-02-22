@@ -13,10 +13,10 @@ public void setup()
 public void draw()
 {
 	smooth();
-	colorMode(HSB, 210);
-	if (x2 > 209)
+	colorMode(HSB, 250);
+	if (x2 > 249)
 	{
-		x2 = 209;
+		x2 = 249;
 	}
 	else if (x2 < 40)
 	{
@@ -78,8 +78,8 @@ public void sierpinski(float x, float y, float z, float len)
 	// rotateY(radians(yy));
 	//rotateZ(radians(zz));
 	strokeWeight(1);
-	colorMode(HSB,210);
-	stroke(x2-40,210,210);
+	colorMode(HSB,250);
+	stroke(x2-40,250,250);
 	noFill();
 	if (len>q)
 	{
